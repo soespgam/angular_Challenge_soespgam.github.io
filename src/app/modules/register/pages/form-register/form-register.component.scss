@@ -1,0 +1,63 @@
+.img{
+    background-image: url('/src/assets/images/logo_transparent.png');
+}
+
+.centerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightDiv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 48px;
+    padding-right: 104px;
+}
+
+.cardForm{
+    height: 592px;
+    width: 560px;
+    border-radius: 6px;
+}
+
+.inputForm{
+    height: 64px;
+    width: 496px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+}
+
+.buttonForm{
+    height: 48px;
+    width: 366px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.imgForm{
+    height: 212px;
+    width: 346px;
+    border-radius: 0px;
+}
+
+.buttonForm2{
+    background-color: white;
+    color: #0d6efd;
+}
+
+.textBottom{
+    font-size: 12px;
+    text-align: center;
+}
+
+.color{
+    color: #0d6efd;
+}
+
+.color2{
+    color: #333333;
+    ;
+}

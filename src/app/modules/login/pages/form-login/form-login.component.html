@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-12 rightDiv">
+        <button type="button" class="btn btn-primary buttonForm2" (click)="register()">SIGNUP</button>
+    </div>
+    <div class="col-12 centerDiv">
+        <img class=" imgForm" src="/assets/images/logo_transparent.png" alt="">
+    </div>
+    <div class="col-12, centerDiv">
+        <div class="card cardForm shadow p-3 mb-5 bg-body rounded">
+            <div class="card-body">
+                <h5 class="card-title">Login</h5>
+                <form autocomplete="off" [formGroup]="authLogin">
+                    <div class="mb-3">
+                        <label class="form-label">Your Email</label>
+                        <input type="email" class="form-control inputForm" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label ">Password</label>
+                        <input type="password" class="form-control inputForm" formControlName="password">
+                    </div>
+                    <div class="centerDiv">
+                        <button class="btn btn-primary buttonForm" [disabled]="!authLogin.valid" (click)="loginUser()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

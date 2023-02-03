@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-4">
+        <img class="img" src="/assets/images/logo_transparent.png" alt="">
+    </div>
+    <div class="col-8 rightDiv btnoLog">
+        <button type="button" class="btn btn-primary buttonForm2" (click)="logout()">LOGOUT</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <app-profile [profile]="dataProfile"></app-profile>
+    </div>
+    <div class="col-8">-
+        <div class="row">
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 973px;">
+                <app-form-url [linkId]="listLinks[listLinks.length-1]" (newLink)="saveNewLink($event)"></app-form-url>
+            </div>
+            <div class="col-12 shadow p-3 mb-5 bg-body rounded" style="width: 973px;" *ngFor='let link of listLinks ; let i =index'>
+                <app-card-url [link]="link" (deLink)="removeLink(i)"></app-card-url>
+            </div>
+        </div>
+    </div>
+</div>
+    

@@ -1,0 +1,17 @@
+<div class="card-body cardUrl ">
+    <div class="row">
+        <div class="col-12">
+            <div class="row"  style="margin-top: -16px;">
+                <div class="col-11 colorUrl">
+                    <h1>{{link.url}}</h1>
+                </div>
+                <div class="col-1">
+                    <i><img class="icon" src="/assets/images/trash.png" (click)="deletedLink(link.id)"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <strong>{{link.description}}</strong>
+        </div>
+    </div>
+</div>

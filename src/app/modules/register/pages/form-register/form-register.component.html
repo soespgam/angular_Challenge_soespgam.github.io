@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-12 rightDiv">
+        <button type="button" class="btn btn-primary buttonForm2" (click)="login()">LOGIN</button>
+    </div>
+    <div class="col-12 centerDiv">
+        <img class=" imgForm" src="/assets/images/logo_transparent.png" alt="">
+    </div>
+    <div class="col-12, centerDiv">
+        <div class="card cardForm shadow p-3 mb-5 bg-body rounded">
+            <div class="card-body">
+                <h5 class="card-title">SIGNUP</h5>
+                <form autocomplete="off" [formGroup]="saveRegister">
+                    <div class="mb-3">
+                        <label  class="form-label">Full name</label>
+                        <input type="text" class="form-control inputForm" formControlName="fullName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label ">Your Email</label>
+                        <input type="email" class="form-control inputForm" formControlName="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control inputForm" formControlName="password">
+                    </div>
+                    <div class="centerDiv text-center">
+                        <button class="btn btn-primary buttonForm"  [disabled]="!saveRegister.valid" (click)="registerUser()">SIGNUP</button>
+                    </div>
+                    <div class="row textBottom">
+                        <span class="col-12">By Creating account You agree to the</span>
+                        <span class="col-12 color">Terms of use <span class="color2"> and </span> Privacy Polycy</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

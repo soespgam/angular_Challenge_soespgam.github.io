@@ -1,0 +1,26 @@
+.cardUrl {
+    height: 128px;
+    width: 936px;
+    border-radius: 6px;
+}
+
+.centerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    height: 30px;
+    width: 26px;
+    border-radius: 0px;
+}
+
+.colorUrl {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #008DF3;
+}
